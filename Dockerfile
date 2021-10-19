@@ -10,5 +10,5 @@ RUN wget https://down.xiaomy.net/linux/wyc_linux_64 \
         && chmod -R 777 ./wyc_linux_64 
        
 
-ENTRYPOINT ["nohup ./wyc_linux_64 -token=$my_token"]
+#ENTRYPOINT ["nohup ./wyc_linux_64 -token=$my_token"]
 CMD [""]
