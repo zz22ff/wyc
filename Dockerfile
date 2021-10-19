@@ -3,18 +3,16 @@
 #FROM centos:7
 FROM alpine:latest
 ENV my_token 0
-    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
-    LANG=zh_CN.UTF-8 \
-    SHELL=/bin/bash \
 ## Supports x86_64, x86, arm, and arm64
 
 
 RUN mkdir /wyc \
         && cd /wyc \
         && wget -P /wyc https://down.xiaomy.net/linux/wyc_linux_64 \
-        && chmod -R 777 ./wyc_linux_64 \
-        && COPY ./docker-entrypoint.sh ./wyc/
+        && chmod -R 777 ./wyc_linux_64
+COPY ./docker-entrypoint.sh ./wyc/
        
        
 
 ENTRYPOINT ["./wyc/docker-entrypoint.sh"]
+
