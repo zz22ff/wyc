@@ -3,6 +3,9 @@
 #FROM centos:7
 FROM alpine:latest
 ENV my_token 0
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+    LANG=zh_CN.UTF-8 \
+    SHELL=/bin/bash \
 ## Supports x86_64, x86, arm, and arm64
 
 
