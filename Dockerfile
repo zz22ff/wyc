@@ -1,7 +1,7 @@
 ## NOTE: to retain configuration; mount a Docker volume, or use a bind-mount, on /var/lib/zerotier-one
 
-#FROM centos:7
-FROM alpine:latest
+FROM centos:7
+#FROM alpine:latest
 ENV my_token 0
 ## Supports x86_64, x86, arm, and arm64
 
@@ -15,5 +15,3 @@ COPY docker-entrypoint.sh /wyc/docker-entrypoint.sh
        
 
 ENTRYPOINT ["/wyc/docker-entrypoint.sh"]
-
-
