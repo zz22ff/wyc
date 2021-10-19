@@ -7,6 +7,7 @@ ENV my_token 0
 
 
 RUN mkdir /wyc \
+        && yum install wget \
         && cd /wyc \
         && wget -P /wyc https://down.xiaomy.net/linux/wyc_linux_64 \
         && chmod -R 777 ./wyc_linux_64
