@@ -11,4 +11,4 @@ COPY /docker-entrypoint.sh /wyc/
        
        
 
-CMD ["/wyc/docker-entrypoint.sh"]
+CMD ["echo Hello docker!"]
