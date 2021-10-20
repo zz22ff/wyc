@@ -1,1 +1,2 @@
-nohup ./wyc_linux_64 -token=$my_token &
+#nohup ./wyc_linux_64 -token=$my_token &
+ls
